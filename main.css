@@ -1,0 +1,37 @@
+
+.container {
+    margin: 24px;
+}
+
+h1 {
+    margin-bottom: 32px;
+    color: #000;
+}
+
+button {
+    padding: 22px;
+    margin-bottom: 32px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.1s ease;
+}
+
+button:hover {
+    color: #000;
+    background-color: #fff;
+    transition: all 0.1s ease;
+}
+
+p {
+    margin-top: 6px;
+    margin-bottom: 12px;
+    color: #000;
+    font-size: 18px;
+}
+
+.congratilations {
+    display: none;
+}
