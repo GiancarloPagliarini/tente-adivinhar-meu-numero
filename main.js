@@ -3,6 +3,7 @@ let result = document.querySelector('.res')
 let textDefault = document.querySelector('.text-default')
 let congratilations = document.querySelector('.congratilations')
 
+let contador = 0
 let randomNumber = 0
 let numberChosen = 0
 
@@ -12,6 +13,8 @@ function randomicNumber() {
 }
 
 btn.addEventListener('click', () => {
+    contador ++
+
     numberChosen = Number(prompt('Qual seu palpite?'))
     
     if (numberChosen < randomNumber) {
@@ -21,6 +24,7 @@ btn.addEventListener('click', () => {
     } else if (numberChosen === randomNumber) {
         result.innerHTML += `<hr><p><strong>🎉 PARABÉNS! 🎉</strong> Você acertou! Eu tinha sorteado o valor <strong>${randomNumber}</strong></p>`
         btn.style.display = 'none'
+        result.innerHTML += `<p>Você tentou <strong>${contador}</strong> vezes até acertar!</p>`
         result.innerHTML += `<p>Para jogar mais, recarregue a página 😀</p>`
 
         congratilations.style.display = 'block'
